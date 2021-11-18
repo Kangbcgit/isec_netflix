@@ -1,8 +1,11 @@
+@import url(style.css);
+
 /* common */
-*{
+* {
     text-decoration: none;
     color: #fff;
 }
+
 body {
     background: #000;
     margin: 0 auto;
@@ -20,7 +23,49 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+
+
+section.ads {
+    height: 473.92px;
+    box-sizing: border-box;
+    border-bottom: 8px solid #333;
+
+    position: relative;
+}
+
+section.ads>div {
+    width: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.ads>div>.img-box {
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+    text-align: left;
+
+    position: absolute;
+}
+
+.text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.text p {
+    font-size: 26px;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .clearfix::after {
@@ -31,16 +76,16 @@ body {
 
 /* header style */
 section.top_background {
-    height: 83vh;
+    height: 81vh;
     background: url('../img/bgimg.jpg') no-repeat center / cover;
-    border-bottom: 10px solid #555;
+    border-bottom: 8px solid #555;
     opacity: 0.45;
 
     position: relative;
 }
-section.top {
-    height: 1000vh;
-}
+
+section.top {}
+
 header {
     width: 100%;
 
@@ -48,20 +93,28 @@ header {
     top: 0;
     left: 0;
 }
+
 header .inner {
     padding: 30px 55px;
 }
+
 header .logo {
     float: left;
-    width: 12%;
+    width: 10%;
+
     position: relative;
+    top: -46px;
+    left: -5px;
 }
-header .logo img{
+
+header .logo img {
     width: 100%;
 }
+
 header .header_right {
     float: right;
 }
+
 header .select_language {
     float: left;
     width: 94px;
@@ -71,28 +124,210 @@ header .select_language {
     box-sizing: border-box;
     text-align: center;
 }
+
 header .sign_in {
     float: left;
-    width: 82px; 
+    width: 82px;
     height: 35px;
-    background:#e50914;
+    background: #e50914;
     text-align: center;
     margin-left: 34px;
 }
+
 header .sign_in a {
     padding: 7px 17px;
     line-height: 2.1;
 }
+
 .sign_up {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 64px;
 
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%,-50%);
+    top: 36.5%;
+    transform: translate(-50%, -50%);
 }
+
+.sign_up .main {
+    text-align: center;
+}
+
 .sign_up .main h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 64px;
+    line-height: 1.4em;
+    letter-spacing: -0.7px;
+}
+
+.sign_up .main p {
+    font-size: 26px;
+    margin-top: 12px;
+    letter-spacing: -0.7px;
+}
+
+.sign_up .main .guide {
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: -0.7px;
+}
+
+.sign_up .main form {
+    position: relative;
+    right: 100px;
+}
+
+.sign_up .main form input {
+    margin-top: 27px;
+    color: #333;
+    padding: 10px 10px 10px;
+    width: 500px;
+    height: 70px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sign_up .main form button {
+    color: #fff;
+    background: #f40612;
+    font-size: 30px;
+    width: 208px;
+    height: 70px;
+    padding: 0 30px;
+    border: none;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 27px;
+    left: 724px;
+}
+
+.ads .tv .text {
+    float: left;
+
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+}
+
+.ads .tv .img-box {
+    float: right;
+}
+
+
+section.ads .tv .img-box img {
+    width: 100%;
+
+    position: relative;
+    z-index: 3;
+}
+
+section.ads .tv .intv {
+    width: 36.3%;
+
+    position: absolute;
+    top: 90px;
+    right: 81px;
+    z-index: 1;
+}
+
+section.ads .phone .text {
+    float: right;
+
+    top: -20%;
+    right: 0;
+    transform: translate(0, 50%);
+}
+
+section.ads .phone .img-box {
+    width: 44%;
+    float: left;
+
+    position: relative;
+    right: 55px;
+}
+
+section.ads .phone .img-box img {
+    width: 100%;
+}
+
+section.ads .phone .img-box .loading {
+    width: 331px;
+    height: 104px;
+    padding: 8px 12px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: #000;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 230px;
+    left: 17%;
+}
+
+section.ads .phone .img-box .loading .color {
+    color: #0071Eb;
+}
+
+section.ads .phone .img-box .loading .img-box {
+    width: 57px;
+    height: 80px;
+    margin-right: 18px;
+
+    position: relative;
+    left: 0px;
+}
+
+section.ads .phone .img-box .loading .ptext {
+    position: absolute;
+    left: 26%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+section.df {
+    height: 543px;
+
+    position: relative;
+}
+
+.wrap section.ads .tv2 {
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.ads .tv2 .text {
+    float: left;
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.tv2 .img-box {
+    float: right;
+    width: 100%;
+}
+
+.tv2 .img-box img {
+    width: 95%;
+    float: right;
+
+    position: relative;
+    z-index: 3;
+}
+
+.tv2 video {
+    width: 333px;
+
+    position: absolute;
+    top: 46px;
+    right: 108px;
+
 }

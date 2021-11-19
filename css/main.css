@@ -125,6 +125,12 @@ header .select_language {
     text-align: center;
 }
 
+header .select_language img {
+    width: 10px;
+    height: 10px;
+    background: skyblue;
+}
+
 header .sign_in {
     float: left;
     width: 82px;
